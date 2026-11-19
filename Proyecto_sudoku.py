@@ -154,6 +154,11 @@ print(checkSudoku(incorrecto6))
 
 
 
+# PRUEBAS DE checkCuadrado()
 
 
-
+print(checkCuadrado([[1, 2], [3, 4]]))
+print(checkCuadrado([[1, 2, 3], [4, 5, 6]]))
+print(checkCuadrado([]))
+print(checkCuadrado([[1, 2], [3]]))
+print(checkCuadrado([[1, 2], "hola"]))
