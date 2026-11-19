@@ -1,3 +1,4 @@
+
 def checkSudoku(sudoku):
 
     if not checkCuadrado(sudoku):
@@ -13,7 +14,10 @@ def checkSudoku(sudoku):
         return False
 
     if not checkColumnas(sudoku):
-       return False
+     return False
 
-       return True
+    return True
+
+
+
 

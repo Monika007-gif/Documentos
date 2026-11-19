@@ -90,9 +90,9 @@ def checkSudoku(sudoku):
         return False
 
     if not checkColumnas(sudoku):
-     return False
+        return False
 
-     return True
+    return True
 
 
 
@@ -153,6 +153,23 @@ print(checkSudoku(incorrecto6))
 # >>> False
 
 
+
+
+print("Prueba checkCuadrado:")
+print(checkCuadrado(correcto))
+print(checkCuadrado(incorrecto6))
+
+print("checkNumerosEnRango:")
+print(checkNumerosEnRango(correcto))
+print(checkNumerosEnRango(incorrecto2))
+
+print("checkFilas:")
+print(checkFilas(correcto))
+print(checkFilas(incorrecto1))
+
+print("checkColumnas:")
+print(checkColumnas(correcto))
+print(checkColumnas(incorrecto2))
 
 
 
