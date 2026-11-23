@@ -195,3 +195,11 @@ print(checkInt([[0, -1], [2, 1]]))
 print(checkInt([[1, 2], [3, 4]]))
 
 
+
+print(checkSudoku([[1, 2, 3], [2, 3, 1], [3, 1, 2]]))
+print(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 3], [3, 1, 2, 3], [4, 4, 4, 4]]))
+print(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 4], [4, 1, 2, 3], [3, 4, 1, 2]]))
+print(checkSudoku([["a", "b", "c"], ["b", "c", "a"], ["c", "a", "b"]]))
+print(checkSudoku([[1, 1.5], [1.5, 1]]))
+
+
