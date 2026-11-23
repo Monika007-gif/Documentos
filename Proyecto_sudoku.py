@@ -171,3 +171,10 @@ print(checkNumerosEnRango([[1, 3], [2, 1]]))
 print(checkNumerosEnRango([[1, 0], [2, 1]]))
 print(checkNumerosEnRango([[1, 2], [2, 3]]))
 print(checkNumerosEnRango([[1, 1.5], [2, 1]]))
+
+
+print(checkFilas([[1, 2], [2, 1]]))
+print(checkFilas([[1, 1], [2, 1]]))
+print(checkFilas([[1, 2], [1, 1]]))
+print(checkFilas([[2, 1], [1, 2]]))
+print(checkFilas([[1, 3], [2, 1]]))
