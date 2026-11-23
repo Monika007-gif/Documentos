@@ -131,25 +131,25 @@ incorrecto6 = [[1, 0, 0, 0],
                [0, 0, 0, 1]]
 
 
-print(checkSudoku(incorrecto1))
+assert (checkSudoku(incorrecto1)) == False
 # >>> False
 
-print(checkSudoku(correcto))
+assert (checkSudoku(correcto)) == True
 # >>> True
 
-print(checkSudoku(incorrecto2))
+assert (checkSudoku(incorrecto2)) == False
 # >>> False
 
-print(checkSudoku(incorrecto3))
+assert (checkSudoku(incorrecto3)) == False
 # >>> False
 
-print(checkSudoku(incorrecto4))
+assert (checkSudoku(incorrecto4)) == False
 # >>> False
 
-print(checkSudoku(incorrecto5))
+assert (checkSudoku(incorrecto5)) == False
 # >>> False
 
-print(checkSudoku(incorrecto6))
+assert (checkSudoku(incorrecto6)) == False
 # >>> False
 
 
@@ -157,49 +157,48 @@ print(checkSudoku(incorrecto6))
 # PRUEBAS DE checkCuadrado()
 
 
-print(checkCuadrado([[1, 2], [3, 4]]))
-print(checkCuadrado([[1, 2, 3], [4, 5, 6]]))
-print(checkCuadrado([]))
-print(checkCuadrado([[1, 2], [3]]))
-print(checkCuadrado([[1, 2], "hola"]))
-
+assert(checkCuadrado([[1, 2], [3, 4]])) == True
+assert(checkCuadrado([[1, 2, 3], [4, 5, 6]])) == False
+assert(checkCuadrado([])) == True
+assert(checkCuadrado([[1, 2], [3]])) == False
+assert(checkCuadrado([[1, 2], "hola"])) == False
 
 # PRUEBAS DE checkNumerosEnRango()
 
-print(checkNumerosEnRango([[1, 2], [2, 1]]))
-print(checkNumerosEnRango([[1, 3], [2, 1]]))
-print(checkNumerosEnRango([[1, 0], [2, 1]]))
-print(checkNumerosEnRango([[1, 2], [2, 3]]))
-print(checkNumerosEnRango([[1, 1.5], [2, 1]]))
+assert(checkNumerosEnRango([[1, 2], [2, 1]])) == True
+assert(checkNumerosEnRango([[1, 3], [2, 1]])) == False
+assert(checkNumerosEnRango([[1, 0], [2, 1]])) == False
+assert(checkNumerosEnRango([[1, 2], [2, 3]])) == False
+assert(checkNumerosEnRango([[1, 1.5], [2, 1]])) == False
 
 
-print(checkFilas([[1, 2], [2, 1]]))
-print(checkFilas([[1, 1], [2, 1]]))
-print(checkFilas([[1, 2], [1, 1]]))
-print(checkFilas([[2, 1], [1, 2]]))
-print(checkFilas([[1, 3], [2, 1]]))
+assert(checkFilas([[1, 2], [2, 1]])) == True
+assert(checkFilas([[1, 1], [2, 1]])) == False
+assert(checkFilas([[1, 2], [1, 1]])) == False
+assert(checkFilas([[2, 1], [1, 2]])) == False
+assert(checkFilas([[1, 3], [2, 1]])) == False
 
 
-print(checkColumnas([[1, 2], [2, 1]]))
-print(checkColumnas([[1, 1], [2, 1]]))
-print(checkColumnas([[1, 2], [1, 1]]))
-print(checkColumnas([[2, 1], [1, 2]]))
-print(checkColumnas([[1, 3], [2, 1]]))
+assert(checkColumnas([[1, 2], [2, 1]])) == True
+assert(checkColumnas([[1, 1], [2, 1]])) == False
+assert(checkColumnas([[1, 2], [1, 1]])) == False
+assert(checkColumnas([[2, 1], [1, 2]])) == False
+assert(checkColumnas([[1, 3], [2, 1]])) == False
 
 
 # PRUEBAS DE checkInt()
-print(checkInt([[1, 2], [2, 1]]))
-print(checkInt([[1, 1.5], [2, 1]]))
-print(checkInt([["a", 2], [2, 1]]))
-print(checkInt([[0, -1], [2, 1]]))
-print(checkInt([[1, 2], [3, 4]]))
+assert(checkInt([[1, 2], [2, 1]])) == True
+assert(checkInt([[1, 1.5], [2, 1]])) == False
+assert(checkInt([["a", 2], [2, 1]])) == False
+assert(checkInt([[0, -1], [2, 1]])) == False
+assert(checkInt([[1, 2], [3, 4]])) == True
 
 
 
-print(checkSudoku([[1, 2, 3], [2, 3, 1], [3, 1, 2]]))
-print(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 3], [3, 1, 2, 3], [4, 4, 4, 4]]))
-print(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 4], [4, 1, 2, 3], [3, 4, 1, 2]]))
-print(checkSudoku([["a", "b", "c"], ["b", "c", "a"], ["c", "a", "b"]]))
-print(checkSudoku([[1, 1.5], [1.5, 1]]))
+assert(checkSudoku([[1, 2, 3], [2, 3, 1], [3, 1, 2]])) == True
+assert(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 3], [3, 1, 2, 3], [4, 4, 4, 4]])) == False
+assert(checkSudoku([[1, 2, 3, 4], [2, 3, 1, 4], [4, 1, 2, 3], [3, 4, 1, 2]])) == False
+assert(checkSudoku([["a", "b", "c"], ["b", "c", "a"], ["c", "a", "b"]])) == False
+assert(checkSudoku([[1, 1.5], [1.5, 1]])) == False
 
 
