@@ -178,3 +178,12 @@ print(checkFilas([[1, 1], [2, 1]]))
 print(checkFilas([[1, 2], [1, 1]]))
 print(checkFilas([[2, 1], [1, 2]]))
 print(checkFilas([[1, 3], [2, 1]]))
+
+
+print(checkColumnas([[1, 2], [2, 1]]))
+print(checkColumnas([[1, 1], [2, 1]]))
+print(checkColumnas([[1, 2], [1, 1]]))
+print(checkColumnas([[2, 1], [1, 2]]))
+print(checkColumnas([[1, 3], [2, 1]]))
+
+
