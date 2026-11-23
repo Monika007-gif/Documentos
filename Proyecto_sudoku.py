@@ -162,3 +162,12 @@ print(checkCuadrado([[1, 2, 3], [4, 5, 6]]))
 print(checkCuadrado([]))
 print(checkCuadrado([[1, 2], [3]]))
 print(checkCuadrado([[1, 2], "hola"]))
+
+
+# PRUEBAS DE checkNumerosEnRango()
+
+print(checkNumerosEnRango([[1, 2], [2, 1]]))
+print(checkNumerosEnRango([[1, 3], [2, 1]]))
+print(checkNumerosEnRango([[1, 0], [2, 1]]))
+print(checkNumerosEnRango([[1, 2], [2, 3]]))
+print(checkNumerosEnRango([[1, 1.5], [2, 1]]))
