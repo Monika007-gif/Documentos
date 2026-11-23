@@ -187,3 +187,11 @@ print(checkColumnas([[2, 1], [1, 2]]))
 print(checkColumnas([[1, 3], [2, 1]]))
 
 
+# PRUEBAS DE checkInt()
+print(checkInt([[1, 2], [2, 1]]))
+print(checkInt([[1, 1.5], [2, 1]]))
+print(checkInt([["a", 2], [2, 1]]))
+print(checkInt([[0, -1], [2, 1]]))
+print(checkInt([[1, 2], [3, 4]]))
+
+
