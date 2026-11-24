@@ -202,3 +202,9 @@ assert(checkSudoku([["a", "b", "c"], ["b", "c", "a"], ["c", "a", "b"]])) == Fals
 assert(checkSudoku([[1, 1.5], [1.5, 1]])) == False
 
 
+# Si quiero comprobar por separado sin usar comentarios, para no ejecuar todos los casos test, hago lo siguiente:
+
+# if __name__ == "__main__":
+# test_checkCuadrado() para el cuadrado, por ejemplo.
+
+# Al final del archivo.
