@@ -66,12 +66,12 @@ def checkColumnas(sudoku):
 # comprueba que todos los elementos sean enteros
 
 def checkInt(sudoku):
-     for fila in sudoku:
+    for fila in sudoku:
         for numero in fila:
             if type (numero) != int:
 
              return False
-     return True
+    return True
 
 # Comprueba que el sudoku sea válido
 
@@ -97,7 +97,7 @@ def checkSudoku(sudoku):
 
 
 
-    #test_sudoku.py 
+    # pruebas del programa 
 
 correcto = [[1, 2, 3],
             [2, 3, 1],
@@ -131,46 +131,48 @@ incorrecto6 = [[1, 0, 0, 0],
                [0, 0, 0, 1]]
 
 
-print(checkSudoku(incorrecto1))
+
+assert checkSudoku(incorrecto1) == False
 # >>> False
 
-print(checkSudoku(correcto))
+assert checkSudoku(correcto) == True
 # >>> True
 
-print(checkSudoku(incorrecto2))
+assert checkSudoku(incorrecto2) == False
 # >>> False
 
-print(checkSudoku(incorrecto3))
+assert checkSudoku(incorrecto3) == False
 # >>> False
 
-print(checkSudoku(incorrecto4))
+assert checkSudoku(incorrecto4) == False
 # >>> False
 
-print(checkSudoku(incorrecto5))
+assert checkSudoku(incorrecto5) == False
 # >>> False
 
-print(checkSudoku(incorrecto6))
+assert checkSudoku(incorrecto6) == False
 # >>> False
 
 
 
+# Pruebas de checkCuadrado
+assert checkCuadrado(correcto) == True
+assert checkCuadrado(incorrecto6) == False
 
-print("Prueba checkCuadrado:")
-print(checkCuadrado(correcto))
-print(checkCuadrado(incorrecto6))
+# Pruebas de checkNumerosEnRango
+assert checkNumerosEnRango(correcto) == True
+assert checkNumerosEnRango(incorrecto2) == True
 
-print("checkNumerosEnRango:")
-print(checkNumerosEnRango(correcto))
-print(checkNumerosEnRango(incorrecto2))
+# Pruebas de checkFilas
+assert checkFilas(correcto) == True
+assert checkFilas(incorrecto1) == False
 
-print("checkFilas:")
-print(checkFilas(correcto))
-print(checkFilas(incorrecto1))
+# Pruebas de checkColumnas
+assert checkColumnas(correcto) == True
+assert checkColumnas(incorrecto2) == False
 
-print("checkColumnas:")
-print(checkColumnas(correcto))
-print(checkColumnas(incorrecto2))
+# Pruebas de checkInt
+assert checkInt(correcto) == True
+assert checkInt(incorrecto4) == False
 
-
-
-
+print("Todas las pruebas se han superado correctamente.")
