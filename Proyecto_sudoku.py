@@ -1,7 +1,7 @@
 
 # Comprueba que sea matriz cuadrada y que tenga al menos un elemento
 
-def checkCuadrado(sudoku):
+def check_cuadrado(sudoku):
 
 	n = len(sudoku)
 
@@ -18,7 +18,7 @@ def checkCuadrado(sudoku):
 # Comprueba que todos los números sean enteros y estén entre 1 y n.
 
 
-def checkNumerosEnRango(sudoku):
+def check_numeros_en_rango(sudoku):
     n = len(sudoku)
 
     for fila in sudoku:
@@ -33,7 +33,7 @@ def checkNumerosEnRango(sudoku):
 
 # Comprueba que cada fila contenga todos los números sin repetir
 
-def checkFilas(sudoku):
+def check_filas(sudoku):
     n = len(sudoku)
     numeros = list(range(1, n + 1))
 
@@ -46,7 +46,7 @@ def checkFilas(sudoku):
 
 #Comprueba que las columnas tampoco tengan números repetidos
 
-def checkColumnas(sudoku):
+def check_columnas(sudoku):
     n = len(sudoku)
     numeros = list(range(1, n + 1))
 
@@ -65,7 +65,7 @@ def checkColumnas(sudoku):
 
 # comprueba que todos los elementos sean enteros
 
-def checkInt(sudoku):
+def check_int(sudoku):
     for fila in sudoku:
         for numero in fila:
             if type (numero) != int:
@@ -75,24 +75,23 @@ def checkInt(sudoku):
 
 # Comprueba que el sudoku sea válido
 
-def checkSudoku(sudoku):
+def check_sudoku(sudoku):
 
-    if not checkCuadrado(sudoku):
+    if not check_cuadrado(sudoku):
         return False
 
-    if not checkInt(sudoku):
+    if not check_int(sudoku):
         return False
 
-    if not checkNumerosEnRango(sudoku):
+    if not check_numeros_en_rango(sudoku):
         return False
 
-    if not checkFilas(sudoku):
+    if not check_filas(sudoku):
         return False
 
-    if not checkColumnas(sudoku):
-        return False
-
-    return True
+    check_columnas(sudoku)
+        
+    
 
 
 
